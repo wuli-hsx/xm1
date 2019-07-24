@@ -1,0 +1,254 @@
+.main{
+	margin: 0 auto;
+	width: 1350px;
+	margin-top: 100px;
+}
+header{
+	width: 1350px;
+	height: 90px;
+	border-bottom: 2px solid #e6e6e6;
+}
+.top{
+	width: 1100px;
+	float: left;
+	margin: 0px 100px;
+}
+.top_top{
+	width: 1100px;
+	float: left;
+	height: 60px;
+	padding-top: 10px;
+}
+.top_top img:nth-of-type(2){
+	float: right;
+	cursor: pointer;
+	
+}
+.top_top img:nth-of-type(3){
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}
+#sousuo{
+	width:300px;
+	height: 30px;
+	text-indent: 4em;
+	border-radius: 50px 50px  50px 50px ;
+	background:url(../img/03.gif) no-repeat;
+	background-position: 20px 10px;
+	float: right;
+	margin-right: 100px;
+	box-shadow: 0 0 5px;
+}
+.geren{
+	width: 150px;
+	height: 180px;
+	background-color: white;
+	z-index: 3;
+	position: absolute;
+	right: 100px;
+	top: 60px;	
+	display: none;
+
+	box-shadow: 0 0 5px;
+	border-radius:5pxh ;
+}
+.geren ul li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #000000;
+}
+.geren ul li{
+	padding-top: 15px;
+	padding-left: 40px;
+	cursor: pointer;
+	line-height: 20px;
+}
+.geren ul li img{
+	position: absolute;
+	left: 15px;
+}
+.geren ul li:hover{
+	background-color: #CCCCCC;
+}
+#content ul{
+	overflow: hidden;
+	height: 480px;
+	width: 1100px;
+	cursor: pointer;
+}
+
+
+
+
+
+.logo{margin: 10px 0;}
+.logo span{
+    display: inline-block;
+    float: right;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.logo h2{
+	font-size: 20px;
+	margin-right: 110px;
+	padding-bottom: 15px;
+	margin-left: 100px;
+	border-bottom: 2px solid black;
+}
+#del1 li img:first-of-type{
+	cursor: pointer;
+	margin-top: 10px;
+}
+/*#del1{
+	background-color: #FAEBD7;
+}
+#del2{
+	background-color: #FFAA00;
+}
+#del3{
+	background-color: #FAEBD7;
+}*/
+#del2 li img:first-of-type{
+	cursor: pointer;
+	margin-top: 20px;
+	
+}
+#del3 li img:first-of-type{
+	cursor: pointer;
+	margin-top: 10px;
+	
+}
+#del1 li img:first-of-type:hover{
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2),0 0 10px 0 rgba(0,0,0,0.5);
+}
+#del2 li img:first-of-type:hover{
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2),0 0 10px 0 rgba(0,0,0,0.5);
+}
+#del3 li img:first-of-type:hover{
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2),0 0 10px 0 rgba(0,0,0,0.5);
+}
+#text{
+	margin-top:25px;
+}
+
+.cartList{
+    overflow: hidden;
+}
+.cartList ul{
+    clear: both;
+    width: 1098px;
+    overflow: hidden;
+    border-bottom: 1px #c6c6c6 dashed;
+     border: 1px #c6c6c6 solid;
+    padding-top: 6px;
+    margin-left: 100px;
+}
+.cartList ul li img{
+	width: 60px;
+}
+.cartList ul li{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+
+}
+.cartList ul li input[name="price"]{
+    border: none;
+    background: transparent;
+    width: 45px;
+    text-align: center;
+    margin-top: 30px;
+}
+.cartList ul li input[name="amount"]{
+    width: 45px;
+    text-align: center;
+    border: 1px solid #999999;
+    border-left: none;
+    border-right: none;
+    height: 21px;
+    margin-top: 30px;
+}
+.cartList ul li input[name="minus"],.cartList ul li input[name="plus"]{
+    height: 25px;
+    border: 1px #999999 solid;
+    width: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+.cartList ul li:nth-of-type(1){
+	width: 130px;
+	margin-left: 30px;
+	}
+.cartList ul li:nth-of-type(2){
+	width: 200px;
+	margin-left: 30px;
+	}
+.cartList ul li:nth-of-type(3){
+	width: 130px;
+	margin-left: 30px;
+	}
+.cartList ul li:nth-of-type(4){
+	width: 100px;
+	margin-left: 30px;	
+	}
+.cartList ul li:nth-of-type(5){
+	width: 130px;
+	margin-left: 30px;
+	margin-right: 40px;
+	}
+	#price1{
+		margin-top: 30px;
+	}
+	#price0{
+		margin-top: 30px;
+	}
+	#price2{
+		margin-top: 30px;
+	}
+.cartList ul li p{
+	cursor: pointer;
+}
+
+.cartList ol{
+    float: right;
+    clear: both;
+    margin-right: 150px;
+}
+
+
+.cartList ol li:nth-of-type(2) span{
+	font-size: 16px;
+	background-color: red;
+	padding: 10px 30px;
+	float: right;
+	cursor: pointer;
+	color: white;
+
+}
+.cartList ol li:nth-of-type(2) span:hover{
+	color: white; 	
+}
+.aaa1{
+	margin-left: 100px;
+}
+#totalPrice{
+	color: red;
+	font-size: 16px;
+	padding: 10px;
+}
+
+

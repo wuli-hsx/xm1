@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网易云音乐-购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/gouwuche.js" ></script>
+	</head>
+	<body>
+		<div class="main">
+			<!--<div class="geren" id="geren">
+						<ul type="none">
+							<li><img src="img/07.png"/><a href="index.html">首页</a></li>
+							<li><img src="img/08.png"/>我的优惠卷</li>
+							<li><img src="img/09.png"/>我的收货地址</li>
+							<li><img src="img/10.png"/>网易云音乐首页</li>
+							<li><img src="img/11.png"/>退出</li>
+						</ul>
+			</div>-->
+			<header>
+			<div class="top">
+				<div class="top_top">
+					<img src="img/zhuy-1.gif"/>
+					<input type="text" name="" id="sousuo" value="" placeholder="时尚服装" />
+					
+				</div>
+			</div>
+			</header>
+			<section>
+				<div class="content">
+			    <div class="logo">
+			    <h2>购物车</h2>
+			    </div>
+			    <div class="cartList" id="cartList">
+			        <ul type="none" >
+			            <li>商品图片</li>
+			            <li>商品信息</li>
+			            <li>单价</li>
+			            <li>数量</li>
+			            <li>总价</li>
+			            <li>操作</li>
+			        </ul>
+			        <ul type="none" id="del1">
+			        
+			            <li><img src="img/148124757166851237.jpg" ></li>
+			            <li id="text">名牌手表</li>
+			            <li>¥<input type="text" name="price" value="99"></li>
+			            <li><input type="button" name="minus" value="-" onclick="minus(0);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(0);"></li>
+			            <li id="price0">¥99</li>
+			            <li><p  onclick="collection();">移入收藏</p><p onclick="del1()">删除</p></li>
+			        </ul>
+			        <ul type="none"  id="del2">
+			        	
+			            <li><img src="img/155807554618206961.jpg"></li>
+			            <li id="text">小女孩的衣服 好看 有好看</li>
+			            <li>¥<input type="text" name="price" value="52"></li>
+			            <li><input type="button" name="minus" value="-" onclick="mianus(1);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(1);"></li>
+			            <li id="price1">¥52</li>
+			            <li><p  onclick="collection();">移入收藏</p><p onclick="del2()">删除</p></li>
+			        </ul>
+			         <ul type="none" id="del3">
+			         	
+			            <li><img src="img/hainang-11.gif"></li>
+			            <li id="text">男士衣服</li>
+			            <li>¥<input type="text" name="price" value="72"></li>
+			            <li><input type="button" name="minus" value="-" onclick="minus(2);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(2);"></li>
+			            <li id="price2">¥72</li>
+			            <li><p  onclick="collection();">移入收藏</p><p onclick="del3()">删除</p></li>
+			        </ul>
+			        <ol type="none">
+			            <li id="totalPrice">（已享受免运费）商品总计：<span id="zongjia"></span></li>
+			            <li><span onclick="total1()">结 算</span></li>
+			        </ol>
+			    </div>
+			</div>
+			</section>
+
+		</div>
+	</body>
+</html>

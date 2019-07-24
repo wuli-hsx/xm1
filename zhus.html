@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/zs.css" />
+	</head>
+	<body>
+			<header class="header_middle">
+    <div class="zhus">
+			<div class="zs_1">
+				<img src="img/zs-1.gif"/>
+			  <span class="zs_2">欢迎注册</span>
+			  <a href="index.html">我已注册,马上登入></a>
+			</div>
+</header>
+    <div class="register_content">
+        <div class="register_mid_bg">用户注册</div>
+        <div class="register_message">
+            <form action="index.html" method="get" id="myform">
+                <dl class="register_row">
+                    <dt>Email地址：</dt>
+                    <dd><input id="email" type="email" required="required" pattern="\w+@+\w+(\.[a-zA-Z]{2,3}){1,2}" class="register_input"/></dd>
+                </dl>
+                <dl class="register_row">
+                    <dt>设置昵称：</dt>
+                    <dd><input id="nickName" type="text" class="register_input"  required="required" pattern="[a-zA-Z0-9]{4,20}"/></dd>
+                </dl>
+                <dl class="register_row">
+                    <dt>设定密码：</dt>
+                    <dd><input id="pwd" type="password" class="register_input"required="required"  pattern="[a-zA-Z0-9]{6,20}"/></dd>
+                </dl>
+                <dl class="register_row">
+                    <dt>再输入一次密码：</dt>
+                    <dd><input id="repwd" type="password" class="register_input"/></dd>
+                </dl>
+                <dl class="register_row">
+                    <dt>性别：</dt>
+                    <dd><input name="sex" id="man" type="radio" value="男" checked="checked"/> <label for="man">男</label></dd>
+                    <dd> <input name="sex" id="woman" type="radio" value="女"/> <label for="woman">女</label></dd>
+                </dl>
+                <div class="registerBtn"><input id="registerBtn" type="image" src="img/zs-8.gif"/ width="200px" height="25px"></div>
+            </form>
+        </div>
+    </div>
+		<div class="zs_11">
+					<ul type="none">
+						<li>苏宁互联</li><li>|</li>
+							<li>苏宁金融</li><li>|</li>
+							<li>苏宁支付</li><li>|</li>
+							<li>PP视频</li><li>|</li>
+							<li>红孩子</li><li>|</li>
+							<li>苏宁物流</li><li>|</li>
+							<li>手机苏宁</li><li>|</li>
+							<li>零售云</li><li>|</li>
+							<li>苏宁云</li><li>|</li>
+							<li>知识产权举报</li><li>|</li>
+							<li>投资者关系</li>
+					</ul>	
+				</div>
+				<div class="zs_12">
+		 <ul type="none">
+	                          <li>联系我们</li><li>|</li>
+							<li>诚聘英才</li><li>|</li>
+							<li>供应商入驻</li><li>|</li>
+							<li>广告平台</li><li>|</li>
+							<li>苏宁联盟</li><li>|</li>
+							<li>苏宁招标</li><li>|</li>
+							<li>友情链接</li><li>|</li>
+							<li>隐私政策</li><li>|</li>
+							<li>用户体验提升计划</li><li>|</li>
+							<li>股东会员认证</li><li>|</li>
+							<li>投资者关系</li>
+                 </ul>
+				</div>
+				<div class="zs_13">
+					<img src="img/zs-9.gif"/>
+				</div>
+		</div>
+	
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function(){
+        //点击注册图片时，验证信息
+        $("#registerBtn").click(function(){
+            //验证邮箱
+            var email = document.getElementById("email");
+            if(email.validity.valueMissing == true){
+                email.setCustomValidity("邮箱不能为空");
+            }else if(email.validity.patternMismatch==true){
+                email.setCustomValidity("邮箱格式必须为web@bdqn.cn或web@bdqn.com.cn");
+            }else{
+                email.setCustomValidity("");
+            }
+            //验证昵称
+            var u = document.getElementById("nickName");
+            if(u.validity.valueMissing == true){
+                u.setCustomValidity("昵称不能为空");
+            }else if(u.validity.patternMismatch==true){
+                u.setCustomValidity("昵称必须使用大小写英文字母、数字，长度为4~20个字符");
+            }else{
+                u.setCustomValidity("");
+            }
+            //验证密码
+            var pwd = document.getElementById("pwd");
+            if(pwd.validity.valueMissing == true){
+                pwd.setCustomValidity("密码不能为空");
+            }else if(pwd.validity.patternMismatch==true){
+                pwd.setCustomValidity("密码必须使用大小写英文字母、数字，长度为6~20个字符");
+            }else{
+                pwd.setCustomValidity("");
+            }
+        });
+<script/>
+	</body>
+</html>

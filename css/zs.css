@@ -1,0 +1,100 @@
+body{
+	background-color:#f8f8f8;
+}
+.zs_1 img{
+	margin-left: 500px;
+	margin-top: 20px;
+}
+.zs_2{
+	position: absolute;
+	font-size: 25px;
+	color: #A9A9A9;
+	margin-top: 35px;
+	margin-left: 15px;
+}
+.zs_1 a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #000000;
+	margin-left: 600px;
+}
+.zs_11 ul li:first-of-type{
+	margin-left: 360px;
+}
+.zs_11 li{
+	float: left;
+	padding: 10px;
+}
+.zs_12 ul li:first-of-type{
+	margin-left: 300px;
+}
+.zs_12 li{
+	float: left;
+	padding: 10px;
+}
+.zs_13{
+	margin-left: 780px;
+	margin-top: 130px;
+}
+#register_header{
+    height:48px;
+}
+.register_header_left{
+    float:left;
+    margin:7px 0px 0px 40px;
+    display:inline;
+}
+.register_header_right{
+    float:right;
+    margin:25px 20px 0px 0px;
+    display:inline;
+}
+.register_content{
+    width:980px;
+    height: 500px;
+    margin:15px auto 15px auto;
+    border-radius: 5px;
+    border: 1px solid #a3a3a3;
+}
+.register_mid_bg{
+    border-bottom:dashed 1px #a3a3a3;
+    border-top:0px;
+    height:50px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.register_message{
+    width:900px;
+    padding-top: 5px;
+}
+.register_row{
+    clear:both;
+}
+.register_row dt{
+    float:left;
+    width:200px;
+    height:70px;
+    text-align:right;
+    font-size:14px;
+    margin-left: 200px;
+}
+.register_row dd{
+    float:left;
+    margin-right:5px;
+    display:inline;
+}
+.register_input{
+    width:200px;
+    height:18px;
+    border:solid 1px #999;
+    margin:0px 0px 8px 0px;
+}
+.registerBtn{
+    height:35px;
+    margin:10px 00px 10px 200px;
+    clear:both;
+    margin-left: 440px;
+}
+

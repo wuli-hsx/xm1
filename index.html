@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登入</title>
+	</head>
+	<link rel="stylesheet" href="css/dr.css" />
+	<body>
+		<div class="tobu">
+			<div class="mian"> 
+				<img src="img/151739338109634436.jpg" width="230px" height="100px"/>
+			</div>
+		       <div class="main_1">
+		       	<a href="#">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号绑定验证！《隐私政策》已上线，将更有利于保护您的个人隐私。</a>
+		       </div>
+			<div class="vovo">
+			</div>
+			<div class="main_2">
+				<a href="#">Copyright 2008-2019 vip.com，All Rights Reserved ICP证：粤 B2-20080329</a>
+			</div>
+			<div class="main_3">
+				<span class="main_3_1">账号用户</span>
+				<form method="get" action="yif.html">
+				<input  name="name" type="text" size="20" placeholder="手机号/用户名/邮箱" id="main_3_2"/>
+				<input  name="pass" type="password" size="20" placeholder="密码" id="main_3_3"/>
+				<input name="interest" type="checkbox" id="main_3_4"/ checked> <span class="main_3_5">记住用户名</span>
+				<input  type="image" value=" " name="img" src="img/dr-3.gif" id="main_3_7"/>
+				</form>
+				<span class="main_4"><a href="zhus.html">免费注册 有惊喜></a></span>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+		//email和昵称的非空判断
+        $("#main_3_7").click(function(){
+            var email = $("#main_3_2");
+            var pwd = $("#main_3_3");
+            if(email.val()=="" || pwd.val()==""){
+                alert("请输入手机号/用户名/邮箱/密码");
+                return false;
+            }else{
+                alert("登入成功")
+                window.open("yif.html")
+            }
+        })
+		</script>
+	</body>
+</html>
